@@ -50,7 +50,23 @@ public class Tasks {
         System.out.println("your sum is "+ sum);
     }
     public static void task4(Scanner scan){
-
+        int n = 0;
+        int small = Integer.MAX_VALUE;
+        int big = Integer.MIN_VALUE;
+        System.out.println("enter your numbers(last number should be 0): ");
+        while(true){
+            n = Integer.parseInt(scan.nextLine());
+            if (n == 0){
+                break;
+            }
+            if (small > n){
+                small = n;
+            }
+            if (big < n){
+                big = n;
+            }
+        }
+        System.out.println("Difference between min value and max value is " + (big - small));
     }
     public static void task5(Scanner scan){
 
