@@ -69,7 +69,23 @@ public class Tasks {
         System.out.println("Difference between min value and max value is " + (big - small));
     }
     public static void task5(Scanner scan){
-
+        System.out.println("enter number n: ");
+        int n = Integer.parseInt(scan.nextLine());
+        System.out.println("enter your numbers: ");
+        float number = scan.nextFloat();
+        scan.nextLine();
+        float avg = 0;
+        if (number > n){
+            return;
+        }
+        do{
+            System.out.println(number);
+            if (number > 0){
+                avg += number / 2;
+            }
+            number = Integer.parseInt(scan.nextLine());
+        }while(number < n);
+        System.out.println("average of positive numbers is " + avg);
     }
     public static void task6(Scanner scan) {
 
