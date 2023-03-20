@@ -14,7 +14,28 @@ public class Tasks {
         }
     }
     public static void task2(Scanner scan) {
-
+        int n = 0;
+        while (true){
+            System.out.println("enter the number n: ");
+            n = Integer.parseInt(scan.nextLine());
+            if (n == 0) {
+                System.out.println("n must not be equal to 0");
+                continue;
+            }
+            break;
+        }
+        float sum = 0;
+        float i = 1;
+        while (i <= Math.abs(n)){
+            sum += 1/i;
+            i++;
+        }
+        if (n > 0){
+            System.out.println("sum is " + sum);
+        }
+        else {
+            System.out.println("sum is " + (-sum));
+        }
     }
     public static void task3(Scanner scan){
 
