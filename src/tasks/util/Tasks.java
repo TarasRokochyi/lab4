@@ -38,7 +38,16 @@ public class Tasks {
         }
     }
     public static void task3(Scanner scan){
-
+        System.out.println("enter the number n: ");
+        int n = Integer.parseInt(scan.nextLine());
+        int sum = 0;
+        int i = 0;
+        System.out.println("enter your numbers: ");
+        while (i < n){
+            sum += Integer.parseInt(scan.nextLine());
+            i++;
+        }
+        System.out.println("your sum is "+ sum);
     }
     public static void task4(Scanner scan){
 
