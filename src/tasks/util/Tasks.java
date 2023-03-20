@@ -88,6 +88,24 @@ public class Tasks {
         System.out.println("average of positive numbers is " + avg);
     }
     public static void task6(Scanner scan) {
-
+        System.out.println("How many students? ");
+        int n = Integer.parseInt(scan.nextLine());
+        int i = n;
+        float math = 0;
+        float comp_graphic = 0;
+        float programming = 0;
+        while(i > 0){
+            System.out.println(i + " student: ");
+            System.out.println("Math: ");
+            math = (math + Integer.parseInt(scan.nextLine())) / 2;
+            System.out.println("Computer graphics: ");
+            comp_graphic = (comp_graphic + Integer.parseInt(scan.nextLine())) / 2;
+            System.out.println("Programming: ");
+            programming = (programming + Integer.parseInt(scan.nextLine())) / 2;
+            i--;
+        }
+        System.out.println("Average grade of math is " + math);
+        System.out.println("Average grade of computer graphic is " + comp_graphic);
+        System.out.println("Average grade of programming is " + programming);
     }
 }
